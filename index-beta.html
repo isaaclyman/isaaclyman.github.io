@@ -7,7 +7,7 @@ Email: mail@isaaclyman.com
 -->
 
 
-<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="templates">
 <head>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 <meta name="google-site-verification" content="OH3Ope994gE-B6elAQFPgAB1-GeqBEmrowqx4tVImBA" />
@@ -22,24 +22,28 @@ Email: mail@isaaclyman.com
 <meta name="authors" content="Isaac Lyman" />
 <meta name="date" content = "20150101" />
 
-<script type="text/javascript" src="fades.js"></script>
 <script type="text/javascript" src="jquery-1.5.min.js"></script>
-<script type="text/javascript" src="angular.min.js"></script> 
+<script type="text/javascript" src="angular.min.js"></script>
+
+<script type="text/javascript" src="fades.js"></script>
 <script type="text/javascript" src="content.js"></script>
+<script type="text/javascript" src="ng-elements.js"></script>
 
 <link rel="stylesheet" href="fontsty.css" />
 
 </head>
 
-<body class="opmouse" onload="loadinganimation()">
+<body>
 
-<logo></logo>
+<isc-display></isc-display>
 
-<nav></nav>
+<isc-nav></isc-nav>
 
-<content></content>
+<isc-content></isc-content>
 
-<copyright></copyright>
+<isc-copyright></isc-copyright>
+
+<isc-preload></isc-preload>
 
 </body>
 

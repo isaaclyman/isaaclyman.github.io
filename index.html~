@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+isaaclyman.com. 
+Copyright 2011 by Isaac Lyman.
+Email: mail@isaaclyman.com
+-->
+
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="google-site-verification" content="OH3Ope994gE-B6elAQFPgAB1-GeqBEmrowqx4tVImBA" />
+<meta name="wot-verification" content="9d13e815fcef87b5e7c4"/>
+
+<title> Isaac. </title>
+
+<link rel="icon" type="image/png" href="favicon.png" />
+
+<meta name="description" content="Home page for Isaac Lyman, a semantics consultant." />
+<meta name="keywords" content=" semantics marketing consult word choice advertising" />
+<meta name="authors" content="Isaac Lyman" />
+<meta name="date" content = "20110120" />
+
+<script type="text/javascript" src="fades.js"></script>
+<script type="text/javascript" src="jquery-1.5.min.js"></script>
+<script type="text/javascript">
+	//activeopacity: the standard opacity for a letter being hovered over.
+	var activeopacity=0.9;
+	//backopacity: the standard opacity for a letter not being hovered over.
+	var backopacity=0.6;
+	//Afadedin: binary value. 1: The A's are faded in. 0: The A's are not faded in.
+	var Afadedin=0;
+	//blacked: the id of the most recently clicked letter.
+	var blacked;
+	//currentguide: the id of the correct menu option to show for the letter being hovered over.
+	var currentguide="slogan";
+	//source: the id of the correct menu option to show for the letter most recently clicked.
+	var source="slogan";
+	
+	var running=0;
+</script>
+<script type="text/javascript" src="content.js"></script>
+<link rel="stylesheet" href="fontsty.css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11455284-2']);
+  _gaq.push(['_setDomainName', '.isaaclyman.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body class="opmouse" onload="loadinganimation()">
+
+<div id="outermost" class="vcenter">
+
+<!--This div will reset the menu guide if hovered over. It also contains the slogan (originally) and the menu guide (later).-->
+<div id="toSloganUp">
+	<!--I load the slogan as well as all the menu items here. The menu items will be invisible to start with (CSS display:none).-->
+		<div id="outerbar">
+			<div id="innerbar">
+				<span id="loading"><br /><br /><i>Loading...</i></span>
+				<img alt="Words are Expensive. Don't waste them." src="slogan.png" class="waiting" id="slogan" />
+				<img src="isaac-home.png" alt="" class="waiting" id="home" />
+				<img src="services.png" alt="" class="waiting" id="service" />
+				<img src="about.png" alt="" class="waiting" id="about" />
+				<img src="contact.png" alt="" class="waiting" id="contact" />
+			</div>
+		</div>
+    
+</div>
+
+<!--This div contains the menu letters.-->
+
+<!--The first div is necessary to space the letters below the menu guide/slogan. Without it, they would appear on top of each other, because the menu guide/slogan div is absolutely positioned.-->
+<div id="spacer"></div>
+
+	<!--This is where the action happens.-->
+	<!--The first cell and last cell serve as margins to center the letters horizontally.-->
+
+<div id="lowerouterbar">
+	
+		<div id="lowerinnerbar">
+		
+			<img id="toSloganLeft" src="blank.png" alt="" />
+		
+			<img alt="I" src="I.png" id="letI" class="waiting" />
+			
+			<img alt="S" src="S.png" id="letS" class="waiting" />
+		
+			<img alt="A" src="A.png" id="letA1" class="waiting" />
+		
+			<img alt="A" src="A.png" id="letA2" class="waiting" />
+		
+			<img alt="C" src="C.png" id="letC" class="waiting" />
+			
+			<img id="toSloganRight" src="blank.png" alt="" />
+			
+		</div>
+		
+		<div id="toSloganBottom">
+			&nbsp;
+		</div>
+		
+</div>
+
+<div id="textstopmargin">
+	&nbsp;
+</div>
+
+<div id="textscontainer">
+	<div id="texts">
+			<!--This is where descriptive text goes, through the innerHTML command.-->
+	</div>
+</div>
+
+<div id="copyright">
+	&copy; 2011 Isaac Lyman
+</div>
+<br /><br />
+
+<div class="preload">
+	<img src="favicon.png" alt="" />
+	<img src="triangle.png" alt="" />
+	<img src="me.jpg" alt="" />
+</div>
+
+<script type="text/javascript">
+	//I, S, A1, A2, and C: objects from the letters on the screen.
+	var I = document.getElementById("letI");
+	var S = document.getElementById("letS");
+	var A1 = document.getElementById("letA1");
+	var A2 = document.getElementById("letA2");
+	var C = document.getElementById("letC");
+	
+	//slogOb: an object from the slogan picture.
+	var slogOb = document.getElementById("slogan");
+	
+	//thisOb: a variable holding the object currently being displayed above the letters.
+	var thisOb = slogOb;
+	
+	//homeOb, serviceOb, aboutOb, contactOb: objects from the menu guides above the letters.
+	var homeOb = document.getElementById("home");
+	var serviceOb = document.getElementById("service");
+	var aboutOb = document.getElementById("about");
+	var contactOb = document.getElementById("contact");
+	
+	//barOb: an object for the invisible bar below the letters.
+	var barOb = document.getElementById("bar");
+	
+	//loadingOb: an object for the Loading message.
+	var loadingOb = document.getElementById("loading");
+	
+	//These are on "display:none;" anyway, but to be able to fade them in, they need to be invisible as well.
+	$(homeOb).fadeOut(0);
+	$(serviceOb).fadeOut(0);
+	$(aboutOb).fadeOut(0);
+	$(contactOb).fadeOut(0);
+	
+	var copyrightOb = document.getElementById("copyright");
+	
+	var slog = document.getElementById("slogan");
+	var txt = document.getElementById("texts");
+</script>
+
+</div> <!--end of the "outermost" div-->
+
+</body>
+
+</html>

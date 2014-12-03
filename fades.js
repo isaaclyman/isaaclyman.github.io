@@ -1,8 +1,6 @@
 
 /*
 isaaclyman.com. 
-Copyright 2011 by Isaac Lyman. You may use this code to educate yourself, for which purpose I have included several comments, but any use (even with modification) of my code, design, layout or techniques, for commercial or other profitable purposes, is strictly prohibited.
-If your intended use of my intellectual property is potentially ambiguous in regards to the above statement, please contact me for clarification. My specific, written permission will always supercede any Copyright statements.
 Email: mail@isaaclyman.com
 */
 
