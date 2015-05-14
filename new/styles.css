@@ -37,8 +37,12 @@ div.name {
 }
 
 div.details {
-	font-size: 53px;
+	font-size: 48px;
 	padding-left: 12px;
+}
+
+span#flyup {
+	position: relative;
 }
 
 div.footer {
@@ -69,5 +73,3 @@ div.outline {
 div.inline {
 	display: inline-block;
 }
-
-
