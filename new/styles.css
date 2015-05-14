@@ -56,14 +56,6 @@ div.linkout {
 	margin-top: 10px;
 }
 
-div.github-badge {
-	padding: 5px 5px;
-}
-
-div.github-badge span {
-	
-}
-
 div.footer {
 	width: 100%;
 	height: 25px;
@@ -98,14 +90,10 @@ div.float {
 }
 
 div.margin-left {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 a.subtle {
 	text-decoration: none;
 	color: #444;
-}
-
-span.large {
-	font-size: 20px;
 }
