@@ -1,0 +1,73 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+div.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+div.content {
+	width: 500px;
+	padding-top: 6%;
+	margin: 0px auto;
+	color: #444;
+}
+
+div.introduction {
+	font-size: 60px;
+	padding-left: 9px;
+}
+
+div.name {
+	font-family: 'raleway', sans-serif;
+	font-weight: 400;
+	font-size: 165px;
+	color: #AAA;
+}
+
+div.details {
+	font-size: 53px;
+	padding-left: 12px;
+}
+
+div.footer {
+	width: 100%;
+	height: 25px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 11px;
+	color: #888;
+}
+
+
+/* Multi-purpose classes */
+
+span.capitalize {
+	text-transform: uppercase;
+}
+
+div.outline {
+	display: inline-block;
+	padding: 0px 10px;
+	border: 1px solid #CCC;
+	border-radius: 10px;
+}
+
+div.inline {
+	display: inline-block;
+}
+
+
