@@ -9,6 +9,7 @@ body {
 }
 
 hr {
+	clear: both;
 	height: 1px;
 	border: none;
 	border-top: 1px solid #CCC;
@@ -57,6 +58,37 @@ div.linkout {
 	text-align: center;
 }
 
+div.link-header {
+	padding-left: 10px;
+	margin-top: 15px;
+	font-size: 26px;
+	text-align: center;
+}
+
+div.linkout div {
+	margin-top: 15px;
+}
+
+div.tech {
+	text-align: center;
+	clear: both;
+}
+
+div.tech-header {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 26px;
+}
+
+div.tech div {
+	text-align: center;
+	margin-top: 7px;
+}
+
+div.tech img {
+	margin-left: 5px;
+}
+
 /* Multi-purpose classes */
 
 span.capitalize {
@@ -79,4 +111,8 @@ div.inline {
 
 div.margin-left {
 	margin-left: 20px;
+}
+
+div.top-buffer {
+	
 }
