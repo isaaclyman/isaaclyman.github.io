@@ -10,10 +10,9 @@ body {
 
 hr {
 	clear: both;
-	height: 1px;
+	height: 60px;
 	border: none;
-	border-top: 1px solid #CCC;
-	margin: 10px 5px;
+	margin: 0 5px;
 }
 
 div.content {
