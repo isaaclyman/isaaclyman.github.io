@@ -26,12 +26,27 @@ hr.vert {
     height: 10px;
 }
 
+div.wrapper {
+    padding-top: 40px;
+}
+
 div.content {
 	cursor: default;
 	max-width: 500px;
-	padding-top: 6%;
 	margin: 0px auto;
-	color: #444;
+	text-align: center;
+    color: #444;
+}
+
+div.portrait {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.portrait img {
+    width: 20%;
+    min-width: 200px;
+    max-width: 400px;
 }
 
 div.introduction {
@@ -63,7 +78,7 @@ div#flyup {
 }
 
 div.linkout {
-	max-width: 220px;
+	max-width: 330px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -77,6 +92,10 @@ div.link-header {
 
 div.linkout div {
 	margin-top: 15px;
+}
+
+div.linkout div.twitter img {
+    padding-top: 6px;
 }
 
 div.tech {
@@ -120,7 +139,7 @@ div.inline {
 }
 
 .margin-left {
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 .relative {
