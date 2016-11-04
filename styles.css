@@ -38,17 +38,6 @@ div.content {
     color: #444;
 }
 
-div.portrait {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-div.portrait img {
-    width: 20%;
-    min-width: 200px;
-    max-width: 400px;
-}
-
 div.introduction {
 	max-width: 475px;
 	margin: 0px auto;
