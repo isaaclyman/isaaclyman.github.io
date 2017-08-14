@@ -89,6 +89,10 @@ div.linkout div.twitter img {
     padding-top: 6px;
 }
 
+img.blog-svg {
+	max-height: 58px;
+}
+
 div.tech {
 	text-align: center;
 	clear: both;
