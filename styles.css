@@ -91,7 +91,7 @@ div.linkout div.twitter img {
 
 .blog-svg {
 	max-height: 58px;
-	width: 293px;
+	max-width: 293px;
 }
 
 div.tech {
