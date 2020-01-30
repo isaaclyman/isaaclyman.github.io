@@ -9,7 +9,7 @@ window.onload = function () {
 // CLASSES
 
 function Il() {
-	var talents = ['code', 'test', 'write', 'share', 'think', 'learn', 'run', 'laugh', 'work', 'play', 'dance'];
+	var talents = ['code', 'test', 'write', 'share', 'think', 'learn', 'read', 'laugh', 'work', 'play'];
 	var currentIndex = 0;
 	var nextTalent = function() {
 		currentIndex = currentIndex + 1 < talents.length ? currentIndex + 1 : 0;
