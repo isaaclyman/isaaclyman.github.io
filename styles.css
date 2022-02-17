@@ -105,6 +105,21 @@ div.book {
   margin-top: 15px;
 }
 
+div.book-links {
+  margin: 6px 0;
+}
+
+div.book-links a {
+  font-size: 16px;
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+span.book-links-separator::before {
+  color: #eee;
+  content: '|';
+}
+
 div.tech {
   text-align: center;
   clear: both;
