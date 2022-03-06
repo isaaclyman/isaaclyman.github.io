@@ -2,11 +2,6 @@
   width: 500px;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Regular.ttf');
-}
-
 body {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -45,7 +40,7 @@ div.introduction {
 }
 
 div.name {
-  font-family: 'raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 167px;
   color: #aaa;
@@ -54,7 +49,8 @@ div.name {
 div.details {
   text-align: center;
   margin: 0px auto;
-  font-size: 48px;
+  font-size: 42px;
+  white-space: nowrap;
 }
 
 div.talent {
@@ -62,8 +58,21 @@ div.talent {
 }
 
 div#flyup {
+  font-family: 'Roboto Mono', 'Lucida Console', Monaco, monospace;
+  min-height: 1em;
+  min-width: 2em;
   position: relative;
-  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+div#flyup::after {
+  color: #888;
+  content: '_';
+  display: inline-block;
+  font-family: 'Roboto Mono', 'Lucida Console', Monaco, monospace;
+  font-weight: 300;
+  margin-right: 22px;
+  opacity: 0.7;
+  width: 4px;
 }
 
 div.link-header {
@@ -149,7 +158,7 @@ span.capitalize {
 div.outline {
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 6px 10px;
+  padding: 6px 10px 10px 14px;
   vertical-align: baseline;
 }
 
@@ -186,9 +195,4 @@ div.superimpose span {
 div.superimpose img {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14),
     0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
-}
-
-span.material {
-  color: #fff;
-  font-family: Roboto;
 }
