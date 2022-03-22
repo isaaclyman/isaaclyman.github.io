@@ -97,6 +97,10 @@ div.linkout div {
   margin-top: 15px;
 }
 
+div.linkout div.inline:not(:last-child) {
+  margin-right: 5px;
+}
+
 .blog-svg {
   max-height: 58px;
   max-width: 293px;
