@@ -15,6 +15,10 @@ hr {
   margin: 0 5px;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 hr.vert {
   display: inline-block;
   width: 10px;
@@ -75,9 +79,8 @@ div#flyup::after {
   width: 4px;
 }
 
-div.link-header {
+.link-header {
   margin-top: 15px;
-  font-size: 26px;
   text-align: center;
 }
 
@@ -99,14 +102,8 @@ div.linkout div {
   max-width: 293px;
 }
 
-.edward-png {
+.book-header {
   margin-top: 15px;
-  height: 45px;
-}
-
-div.book-header {
-  margin-top: 15px;
-  font-size: 26px;
   text-align: center;
 }
 
@@ -129,15 +126,92 @@ span.book-links-separator::before {
   content: '|';
 }
 
+div.writing-links {
+  margin: 6px 0;
+}
+
+.writing-header {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+div.writing {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 12px auto;
+  max-width: 475px;
+}
+
+span.writing-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+span.writing-name a {
+  text-decoration: none;
+}
+
+span.writing-publisher {
+  font-size: 0.68em;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+span.writing-description {
+  font-size: 0.9em;
+  margin-bottom: 6px;
+}
+
+.project-header {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+div.project {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 12px auto;
+  max-width: 475px;
+}
+
+span.project-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+span.project-name a {
+  text-decoration: none;
+}
+
+span.project-role {
+  font-size: 0.68em;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+span.project-description {
+  margin-bottom: 6px;
+}
+
+span.project-tech {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8em;
+}
+
 div.tech {
   text-align: center;
   clear: both;
 }
 
-div.tech-header {
+.tech-header {
   margin-top: 25px;
   margin-bottom: 15px;
-  font-size: 26px;
 }
 
 div.tech div {
