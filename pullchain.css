@@ -1,0 +1,22 @@
+#pullchain {
+  background-color: rgb(202, 204, 206);
+  height: 50px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  width: 2px;
+}
+
+#pullchain-target {
+  background-color: transparent;
+  border: 2px solid rgb(202, 204, 206);
+  border-radius: 50%;
+  content: " ";
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  left: -5.5px;
+  position: absolute;
+  top: 50px;
+  width: 10px;
+}
