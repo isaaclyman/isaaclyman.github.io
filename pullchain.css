@@ -1,8 +1,8 @@
 #pullchain {
   background-color: rgb(202, 204, 206);
-  height: 50px;
+  height: 35px;
   position: absolute;
-  right: 40px;
+  right: 30px;
   top: 0;
   width: 2px;
 }
@@ -14,9 +14,19 @@
   content: " ";
   cursor: pointer;
   display: inline-block;
-  height: 10px;
-  left: -5.5px;
+  height: 15px;
+  left: -8px;
   position: absolute;
-  top: 50px;
-  width: 10px;
+  top: 35px;
+  width: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  #pullchain {
+    display: none;
+  }
+
+  #pullchain-target {
+    display: none;
+  }
 }
