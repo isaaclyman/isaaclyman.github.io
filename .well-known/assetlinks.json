@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.isaaclyman.sootly",
+      "sha256_cert_fingerprints": ["39:72:02:08:BE:04:3F:61:6C:4A:69:D9:F0:1C:01:D8:90:8D:8E:2D:96:D9:08:FB:06:8F:FC:2A:E8:EF:B4:DE"]
+    }
+  }
+]
