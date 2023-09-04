@@ -9,7 +9,28 @@ window.onload = function () {
 // CLASSES
 
 function Il() {
-	var talents = ['code', 'write', 'build', 'share', 'think', 'test', 'teach', 'learn', 'read', 'laugh', 'work', 'play'];
+	var talents = [{
+		label: 'books',
+		href: 'https://leanpub.com/firstyearincode'
+	},{
+		label: 'apps',
+		href: 'https://sootly.isaaclyman.com/'
+	},{
+		label: 'posts',
+		href: 'https://isaaclyman.com/blog/posts/credit-card-microchip/'
+	},{
+		label: 'plugins',
+		href: 'https://github.com/isaaclyman/novel-word-count-obsidian'
+	},{
+		label: 'essays',
+		href: 'https://stackoverflow.blog/2023/05/01/ai-isnt-the-app-its-the-ui/'
+	},{
+		label: 'courses',
+		href: 'https://www.newline.co/courses/line-of-business-apps-with-flutter-3/welcome'
+	},{
+		label: 'tools',
+		href: 'https://github.com/isaaclyman/PhotoShoop'
+	}]
 	var currentIndex = 0;
 	
 	var setNextTalent = function() {
@@ -19,9 +40,10 @@ function Il() {
 	var talentElement = document.getElementById('flyup');
 	
 	var switchTalents = function() {
-		var currentTalent = talents[currentIndex];
+		var currentTalent = talents[currentIndex].label;
 		setNextTalent();
-		var nextTalent = talents[currentIndex];
+		var nextTalent = talents[currentIndex].label;
+		var nextHref = talents[currentIndex].href;
 
 		var commonLetters = getCommonStartingLetters(currentTalent, nextTalent);
 
@@ -40,6 +62,8 @@ function Il() {
 		});
 
 		animateFrames(deletionFrames, 120, 30, function() {
+			talentElement.href = nextHref;
+			
 			setTimeout(function() {
 				animateFrames(additionFrames, 55, 25);
 			}, 200);
@@ -47,7 +71,14 @@ function Il() {
 	};
 	
 	this.beginAnimation = function() {
-		setInterval(switchTalents, 2600);
+		setTimeout(() => {
+			switchTalents();
+			setInterval(() => {
+				if (document.hasFocus()) {
+					switchTalents();
+				}
+			}, 2600);
+		}, 1300);
 	};
 
 	return this;

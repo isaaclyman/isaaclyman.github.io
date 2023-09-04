@@ -52,7 +52,7 @@ div.introduction {
 div.name {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 167px;
+  font-size: 130px;
   color: #aaa;
 }
 
@@ -67,14 +67,15 @@ div.talent {
   vertical-align: bottom;
 }
 
-div#flyup {
+#flyup {
   font-family: 'Roboto Mono', 'Lucida Console', Monaco, monospace;
   min-height: 1em;
   min-width: 2em;
   position: relative;
+  text-decoration: none;
 }
 
-div#flyup::after {
+#flyup::after {
   color: #888;
   content: '_';
   display: inline-block;
