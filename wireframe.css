@@ -16,7 +16,7 @@
   transition: opacity 200ms ease-out;
 }
 
-.wf-hover .wf-h-frame, .wf-hover .wf-v-frame {
+.wf-wrapper:hover .wf-h-frame, .wf-wrapper:hover .wf-v-frame {
   opacity: 1.0;
 }
 
@@ -58,13 +58,8 @@
   z-index: 50;
 }
 
-.wf-hover .wf-hoverable::after {
+.wf-wrapper:hover .wf-hoverable::after {
   color: #8BABD0;
   background-color: #FFF;
   box-shadow: 4px 4px 4px -2px #FFF;
 }
-
-.wf-hover {
-  position: relative;
-}
-

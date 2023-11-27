@@ -40,12 +40,7 @@ const wireframeables = [
     el.classList.add('wf-hoverable');
 
     el.addEventListener('mouseover', function(_) {
-      wrapper.classList.add('wf-hover');
       el.setAttribute('data-dim', `${wrapper.clientWidth} x ${wrapper.clientHeight}`);
-    });
-
-    el.addEventListener('mouseout', function(_) {
-      wrapper.classList.remove('wf-hover');
     });
 
     if (el.classList.contains('wf-observe')) {
