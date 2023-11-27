@@ -2,6 +2,10 @@
   width: 500px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -23,6 +27,14 @@ hr {
 
 h2 {
   font-size: 30px;
+}
+
+a, span {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
 }
 
 hr.vert {
@@ -153,6 +165,7 @@ div.writing-links {
 }
 
 div.writing {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin: 24px auto 12px auto;
@@ -188,6 +201,7 @@ span.writing-description {
 }
 
 div.project {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin: 24px auto 12px auto;
@@ -235,7 +249,7 @@ div.tech div {
   margin-top: 7px;
 }
 
-div.tech img {
+div.tech span {
   margin-left: 5px;
 }
 

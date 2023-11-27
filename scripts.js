@@ -74,7 +74,7 @@ function Il() {
 		setTimeout(() => {
 			switchTalents();
 			setInterval(() => {
-				if (document.hasFocus()) {
+				if (document.visibilityState === 'visible') {
 					switchTalents();
 				}
 			}, 2600);
