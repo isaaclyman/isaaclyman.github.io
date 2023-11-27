@@ -22,6 +22,10 @@ const wireframeables = [
 ];
 
 (function enableWireframe() {
+  if (window.innerWidth <= 800) {
+    return;
+  }
+
   const elementsToWireframe = document.querySelectorAll(wireframeables.join(', '));
 
   for (const el of elementsToWireframe) {
