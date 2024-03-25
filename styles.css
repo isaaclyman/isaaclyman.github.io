@@ -27,6 +27,7 @@ hr {
 
 h2 {
   font-size: 30px;
+  font-weight: lighter;
 }
 
 a, span {
@@ -64,13 +65,21 @@ div.introduction {
 div.name {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 130px;
+  font-size: 120px;
   color: #aaa;
+}
+
+div.socials img {
+  width: 30px;
+}
+
+div.socials > div:not(:last-of-type) {
+  margin-right: 40px;
 }
 
 div.details {
   text-align: center;
-  margin: 0px auto;
+  margin: 24px auto 0 auto;
   font-size: 42px;
   white-space: nowrap;
 }
@@ -254,10 +263,6 @@ div.tech span {
 }
 
 /* Multi-purpose classes */
-
-span.capitalize {
-  text-transform: uppercase;
-}
 
 div.outline {
   border: 1px solid #ccc;

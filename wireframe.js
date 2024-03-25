@@ -1,7 +1,8 @@
 // Note to self: `::after` pseudo-elements don't work on img elements
 const wireframeables = [
   '.introduction',
-  '.name > span',
+  '.name',
+  '.socials a',
   '.details > span',
   '.link-header > span',
   '.linkout a',
