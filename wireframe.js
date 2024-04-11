@@ -9,6 +9,7 @@ const wireframeables = [
   '.book-header > span',
   '.book span',
   '.book-links a',
+  '.blog-link',
   '.writing-header > span',
   '.writing-name',
   '.writing-publisher',
