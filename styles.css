@@ -107,6 +107,10 @@ div.talent {
   width: 4px;
 }
 
+.app-icon {
+  filter: drop-shadow(0 2px 25px rgba(0, 0, 0, 0.2));
+}
+
 .link-header {
   margin-top: 15px;
   text-align: center;
