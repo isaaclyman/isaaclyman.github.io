@@ -133,6 +133,15 @@ div.linkout div.inline:not(:last-child) {
   margin-right: 5px;
 }
 
+.blog-link {
+  text-decoration: none;
+}
+
+.blog-label {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 .blog-svg {
   max-height: 58px;
   max-width: 293px;
