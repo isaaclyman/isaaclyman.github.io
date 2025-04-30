@@ -14,10 +14,10 @@ function Il() {
 		href: 'https://leanpub.com/firstyearincode'
 	},{
 		label: 'apps',
-		href: 'https://sootly.isaaclyman.com/'
+		href: 'https://isaaclyman.com/bookoscope/'
 	},{
 		label: 'posts',
-		href: 'https://isaaclyman.com/blog/posts/credit-card-microchip/'
+		href: 'https://isaaclyman.com/blog/posts/laws/'
 	},{
 		label: 'plugins',
 		href: 'https://github.com/isaaclyman/novel-word-count-obsidian'
@@ -25,11 +25,14 @@ function Il() {
 		label: 'essays',
 		href: 'https://stackoverflow.blog/2023/05/01/ai-isnt-the-app-its-the-ui/'
 	},{
-		label: 'courses',
-		href: 'https://www.newline.co/courses/line-of-business-apps-with-flutter-3/welcome'
-	},{
 		label: 'tools',
 		href: 'https://github.com/isaaclyman/PhotoShoop'
+	},{
+		label: 'games',
+		href: 'https://sootly.isaaclyman.com/'
+	},{
+		label: 'guides',
+		href: 'https://rpg.freakinheck.party/'
 	}]
 	var currentIndex = 0;
 	
