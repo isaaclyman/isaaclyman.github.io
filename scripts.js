@@ -23,7 +23,7 @@ function Il() {
 		href: 'https://github.com/isaaclyman/novel-word-count-obsidian'
 	},{
 		label: 'essays',
-		href: 'https://stackoverflow.blog/2023/05/01/ai-isnt-the-app-its-the-ui/'
+		href: 'https://stackoverflow.blog/2026/01/01/documents-the-architect-s-programming-language/'
 	},{
 		label: 'tools',
 		href: 'https://github.com/isaaclyman/PhotoShoop'
