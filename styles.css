@@ -267,12 +267,14 @@ div.tech {
 }
 
 div.tech div {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 7px;
 }
 
 div.tech span {
-  margin-left: 5px;
+  margin: 0px 4px;
 }
 
 /* Multi-purpose classes */
